@@ -1,0 +1,33 @@
+name: jupyter_dask 
+
+channels:
+  - conda-forge
+
+dependencies:
+  - python=3.10
+  # Jupyter and Dask specific
+  - dask[complete]
+  - dask-jobqueue
+  - jupyterlab>=3
+  - dask-labextension
+  - jupyterlab-git
+  # other libraries
+  - fsspec
+  - gdal
+  - h5netcdf
+  - matplotlib
+  - panel
+  - pystac
+  - pystac-client
+  - python-graphviz
+  - rioxarray
+  - shapely
+  - xarray 
+  - zarr
+  - pip
+  - pip:
+    - dcachefs>=0.1.7
+    - stac2dcache
+    - /project/stursdat/Software/stm/. 
+    - /project/stursdat/Software/sarxarray/.
+
